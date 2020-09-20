@@ -1,0 +1,30 @@
+defaultValue
+
+
+http://localhost:3000/booking/regist 에서 [목록이동] ㄱㄴ
+http://localhost:3000/booking/regist 에서 [뒤로가기] ㄱㄴ
+
+http://localhost:3000/booking/detail/List 에서 [목록이동]불ㄱㄴ
+http://localhost:3000/booking/detail/List 에서 [뒤로가기]불ㄱㄴ
+
+
+???????
+로직이 이해가지를...
+
+http://localhost:3000/booking/regist 에서 등록하려면ㅡ
+ㅡ시작/종료일을 swagger에서 받아와야만 이게 등록이 되는건가
+
+
+
+http://localhost:8000/api/booking/ 에서 등록된 리스트를 봐도
+감이 잘 안오는데... 
+
+-어떤 날짜데이터를 넣어야 등록이 되는거지
+-날짜데이터 넣어서 등록이 되다가도 또 안되는데?
+
+이딴 에러뜨면서...
+xhr.js:178 POST http://localhost:8000/api/booking/ 400 (Bad Request)
+index.js:1 Error: Request failed with status code 400
+    at createError (createError.js:16)
+    at settle (settle.js:17)
+    at XMLHttpRequest.handleLoad (xhr.js:61)

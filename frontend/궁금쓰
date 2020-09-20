@@ -1,0 +1,20 @@
+src/page/booking/List.js
+../../????????뭐야모르겠어 시벌
+>List.js에 있는 거는 ../../로 적는데
+import TopHeader from "../../component/TopHeader";
+import Footer from "../../component/Footer";
+
+
+src/app.js
+>App.js에 있는 건 ./page/로 적는거지
+import Main from "./page/Main";
+
+
+>List.js가 들어있는 위치때문에 그런가?
+src/page/booking/List.js
+src/app.js
+오 이건가?
+
+>유진씨
+List.js(현재위치)가 TopHeader로 가려면 cd.. 하는 것 처럼 그 폴더에서 나가서 파일을 찾는거!!
+어 미친 이해확간다 도랏다

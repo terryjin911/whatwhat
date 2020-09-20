@@ -1,0 +1,14 @@
+  axios
+    .post(apiUrl, reserve)
+    .then((response) => {
+      console.log("등록완료 데이터: ", response.data);
+      alert("등록완료");
+      history.push("List");
+    })
+    .catch((response) => {
+      console.error(response);
+    });
+
+                <button onClick={history.goBack()}> 뒤로가기 </button>
+
+클릭으로 다음페이지 이동하는 기능 이걸로 쓸 수 있겠다 미쳤다 오졌다

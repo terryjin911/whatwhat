@@ -1,0 +1,42 @@
+C:\TerryJin\NaverCloud\TerryJin\Python-django\DAY5\mysite>pip install django-cors-headers
+
+Collecting django-cors-headers
+  Downloading django_cors_headers-3.4.0-py3-none-any.whl (11 kB)
+Requirement already satisfied: Django>=2.0 in c:\users\admin\appdata\local\programs\python\python38\lib\site-packages (from django-cors-headers) (3.1)
+Requirement already satisfied: pytz in c:\users\admin\appdata\local\programs\python\python38\lib\site-packages (from Django>=2.0->django-cors-headers) (2020.1)
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\admin\appdata\local\programs\python\python38\lib\site-packages (from Django>=2.0->django-cors-headers) (0.3.1)
+Requirement already satisfied: asgiref~=3.2.10 in c:\users\admin\appdata\local\programs\python\python38\lib\site-packages (from Django>=2.0->django-cors-headers) (3.2.10)
+Installing collected packages: django-cors-headers
+Successfully installed django-cors-headers-3.4.0
+WARNING: You are using pip version 20.1.1; however, version 20.2.1 is available.
+You should consider upgrading via the 'c:\users\admin\appdata\local\programs\python\python38\python.exe -m pip install --upgrade pip' command.
+
+
+
+
+
+mysite  > settings.py   >   install-apps에 cors_headers추가
+
+                        >    MIDDLEWAR의 3번째에 'corsheaders.middleware.CorsMiddleware', 를 위치시킴
+                            common 미들웨어 위에 위치시킴
+                            최하단에 cors이슈 어쩌구 2가지 추가
+
+20-08-12 오전 10:40
+day4폴더는 잘 실행되는데
+day5폴더 수업진행하면서 이것저것 추가하니까 runserver가 실행되지않는다
+
+
+
+
+
+
+CORS_ORIGIN_ALLOW_ALL = True <<얘를 주석처리한 이후
+
+cors적용 에러 익숙해져야함
+cors를 허용하지 않아서 이런 이슈가 나옴
+해당하는 백엔드 서비스에서 크로스서비스를 지원하지않음
+sample1.html:1 Access to XMLHttpRequest at 'http://localhost:8000/api/booking' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+sample1.html:15 Error: Network Error
+    at e.exports (spread.js:25)
+    at XMLHttpRequest.l.onerror (spread.js:25)
+localhost:8000/api/booking:1 Failed to load resource: net::ERR_FAILED

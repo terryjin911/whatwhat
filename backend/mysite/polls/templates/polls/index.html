@@ -1,0 +1,11 @@
+<h1>설문항목 목록</h1>
+
+{% if lastest_question_list %}
+    <ul>
+        {% for question in lastest_question_list %}
+            <li><a href="/polls/{{question.id}}">{{ question.question_text }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>조회결과가 없어요.</p>
+{% endif %}

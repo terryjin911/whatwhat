@@ -1,0 +1,101 @@
+2020-08-12
+
+CORS
+
+
+미들웨어 영역은 사용자가 호출하기 전 단계에 
+    특성은 사용자의 요청이 있으면 미들웨어를 
+
+    cors미들웨어는 중요도가 높음
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>   네이티브앱, 크로스도메인 개념 다시 잡고가기^ㅇ^
+
+http://localhost:8000/static/sample1.html
+localhost:8000으로 html호출하는거랑
+
+file:///C:/TerryJin/NaverCloud/TerryJin/Python-django/DAY5/mysite/static/sample1.html
+file:///C:/Users/Admin/Videos/sample2.html
+작성한 html파일을 직접 더블클릭해서 실행하는거랑 차이점
+이건 그냥 파일을 연 것 뿐임 하지만 이것도 "크로스도메인"
+
+
+여러개의 도메인을 한 페이지에 
+
+html을 가져오는 리소스가 다르면 브라우저가 의심을 하고 막아버림
+그걸 막지말라고 지시해주는게 
+
+
+
+모바일앱
+스마트폰을 이용에서 사용하는 어플리케이션을 통칭해서 부르는 말
+-네이티브앱     >   Andrioid,IOS에 설치해서 사용하는 것을 어플리케이션이라고 하고 네이티브앱이라고도 함
+    윈도우 OS에 오피스를 설치하는것도 앱임
+    안드로이드 앱은 JAVA kotlin / ios는 swift
+
+-하이브리드앱
+    껍데기만 네이티브 앱으로 되어있고
+    눈에 보이는건 html 
+    자바스크립트로 제어할수있음
+
+-웹앱(모바일웹앱) my case!
+    반응형웹(bootstrap), 브라우저가 모바일에 최적화되어서 보여지는거(모바일웹에 최적화되게 페이지를 그렇게 만들거나 / 반응형웹으로 만들거나)
+    
+-cross platform nativeapp
+    os에 맞는 언어를 이용해 각각의 개발 (언어,프레임워크를 이용해서 별개로 개발)
+    cross platform은 ios와 안드로이드 두 OS 동시에
+    plutter
+
+
+react native는 reactjs랑 용도가 완전 다르고, 크로스플랫폼에서 인기도 많음 
+
+크로스도메인
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> 오후에 할거
+
+1. reactAPP생성
+
+2. react에 booking컴포넌트 만들기 / 라우팅
+
+3. axios react yarn 설치
+3000번포트
+8000번포트
+
+4. booking 컴포넌트 >   등록화면 : POST -> api? -> (call) -> all ? 뭐라써있는거지
+                    >   목록화면 : GET -
+                    >   상세화면 : put or PATCH
+                                  DELETE
+
+5. 로그인           >   로그인
+                    >   토큰발급//api호출
+
+
+
+
+
